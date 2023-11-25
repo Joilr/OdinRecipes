@@ -1,0 +1,97 @@
+//INDEX PAGE
+body.index-page {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-recipes {
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 100;
+        font-style: italic;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #F0E689;
+        text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+        border-bottom: 1px solid #EBDE6D;
+    }
+
+    img {
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out 0s forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .recipe-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+
+        .button {
+            display: flex; // Changed to flex for better text alignment
+            align-items: center; // Centers text vertically
+            justify-content: center; // Centers text horizontally
+            width: 100px; // Fixed width
+            height: 100px; // Fixed height to maintain a circular shape
+            padding: 0; // Adjusted padding; not needed with fixed dimensions
+            margin: 10px;
+            font-size: 20px;
+            text-align: center; // Center the text inside the button
+            text-decoration: none;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+            color: #F0E689; // Text color
+            background-color: #fff; // Button background color
+            border: 1px solid #F0E689;
+            border-radius: 50%; // Makes the buttons round
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #c9bf6db0; // Color change on hover
+            }
+        }
+
+    }
+
+
+}
+
+
+//LASAGNA
+.lasagna-image {
+    height: 25%;
+    width: 25%;
+    border-radius: 15px;
+}
+
+//PIZZA
+.pizza-image {
+    height: 25%;
+    width: 25%;
+    border-radius: 15px;
+}
+
+//SPAGHETTI
+.spaghetti-image {
+    border-radius: 15px;
+}

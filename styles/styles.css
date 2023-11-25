@@ -1,0 +1,72 @@
+body.index-page {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main-recipes h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #F0E689;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  border-bottom: 1px solid #EBDE6D;
+}
+.main-recipes img {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 0s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main-recipes .recipe-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.main-recipes .recipe-buttons .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #F0E689;
+  background-color: #fff;
+  border: 1px solid #F0E689;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.main-recipes .recipe-buttons .button:hover {
+  background-color: rgba(201, 191, 109, 0.6901960784);
+}
+
+.lasagna-image {
+  height: 25%;
+  width: 25%;
+  border-radius: 15px;
+}
+
+.pizza-image {
+  height: 25%;
+  width: 25%;
+  border-radius: 15px;
+}
+
+.spaghetti-image {
+  border-radius: 15px;
+}/*# sourceMappingURL=styles.css.map */
